@@ -1,0 +1,25 @@
+{
+    "items": [
+      {
+        "text": "Accueil",
+        "url": "#top",
+        "title": ""
+      },
+      {
+        "text": "Works",
+        "url": "#works",
+        "title": ""
+      },
+      {
+        "text": "Contact",
+        "url": "#contact",
+        "title": ""
+      },
+      {
+        "text": "Instagram",
+        "url": "https://www.instagram.com/crossbonescustomwork/",
+        "title": "Lien externe vers Instagram"
+      }
+    ]
+  }
+  

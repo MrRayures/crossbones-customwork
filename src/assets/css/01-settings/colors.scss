@@ -1,0 +1,29 @@
+/*
+* Variables concernant les couleurs
+* > utilisation : color($key)
+*/
+
+$colors: (
+  "primary"    : #ffca2c,
+  "secondary"  : #231f20,
+  "text"       : #000000,
+  "accessible_outline" : blue
+);
+
+
+@function color($key) {
+  @if map-has-key($colors, $key) {
+    @return map-get($colors, $key);
+  }
+
+  @warn "Unknown `#{$key}` in $colors.";
+  @return null;
+}
+
+
+// Generate custom properties
+:root {
+    @each $key_name, $value in $colors {
+        --#{$key_name}: #{$value};
+    }
+}

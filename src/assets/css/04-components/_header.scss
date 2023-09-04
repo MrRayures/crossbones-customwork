@@ -1,0 +1,32 @@
+/*-----------------------------------------------------------------------------------------------------
+  [component:header]
+-------------------------------------------------------------------------------------------------------*/
+.c-header {
+    text-align: center;
+    position: sticky;
+    top: 0;
+    z-index: zIndex(absolute);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--secondary);
+    padding: 0 4rem;
+}
+
+.c-header__content {}
+
+.c-header__brand {
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+    color: white;
+    svg {
+        max-width: 2.4rem;
+        height: auto;
+    }
+    span {
+        text-transform: uppercase;
+        font-size: 1.6rem;
+        font-weight: 600;
+    }
+} 

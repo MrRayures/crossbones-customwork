@@ -1,0 +1,35 @@
+/* 
+* Outline pour focus-visible
+*/
+@mixin accessible_outline {
+  outline: 2px dotted var(--accessible_outline);
+  outline-offset: 0.2rem;
+}
+
+/*
+* Media queries
+* 
+* Fonctionne avec la map $breakpoints
+*
+* Utilisation :
+* @include mq(max, bp(lg)) {}
+* > @media only screen and (max-width: 992px) {}
+*
+* @include mq(min, bp(lg)) {}
+* > @media only screen and (min-width: 991px) {}
+*/
+
+@mixin mq($scope: max, $breakpoint) {
+  @if $scope==max {
+    @media screen and (max-width: (calc($breakpoint - 1px))) { // 1px = 0.0625em
+      @content;
+    }
+  }
+
+  @if $scope==min {
+    @media screen and (min-width: $breakpoint) {
+      @content;
+    }
+  }
+
+}

@@ -1,0 +1,18 @@
+{% extends "layouts/base.html" %}
+
+{% block content %}
+    <article class="c-post c-post--detail">
+        
+        <h1 class="c-post__title">{{title}}</h1>
+        <picture class="c-post__img">
+            <!--<source type="image/webp" srcset="flower.webp">
+            <source type="image/jpeg" srcset="flower.jpg">-->
+            <img src="/assets/images/{{ thumb }}.jpg" alt="" width="300">
+        </picture>
+        <div class="c-post__text u-mb-16">
+            <p>{{ excerpt }}</p>
+        </div>
+
+        {{ content | safe }}
+    </article>
+{% endblock %}

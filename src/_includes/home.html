@@ -1,0 +1,47 @@
+{% extends "layouts/base.html" %}
+
+{% block content %}
+
+    <div class="c-cover u-mb-64">
+        <h1 class="c-cover__title">Crossbones Custom Work</h1>
+
+        <div class="c-cover__logo-wrapper">
+            <svg class="c-cover__logo" xmlns="http://www.w3.org/2000/svg" width="80" height="138" viewBox="0 0 80 138" fill="none">
+                <g>
+                    <path d="M0 107.022V22.9334L13.3541 15.2764L39.9991 0L66.646 15.2764L80.0001 22.9334V114.667L39.9991 137.6L0 114.667V107.022Z" fill="white"/>
+                    <path d="M0.000240107 107.022V68.8014H0.00202231L33.3333 87.9128L0.000240107 107.023L6.66645 110.845L39.9992 91.7354L73.3342 110.845L80.0005 107.024V114.667L39.9992 137.6L0.000197673 114.667L0.000240107 107.022ZM80.0005 68.8014V107.023L46.6656 87.9128L80.0005 68.8014ZM66.646 15.2766L39.9992 0.00012207L13.3546 15.2766L0.000152588 22.9337V68.8009H0.00197988L6.66645 64.9784L39.9992 84.0881L40.0014 84.0864V76.4452L39.9992 45.8674L13.3763 30.6016L39.9992 15.3377L66.6265 30.6034L66.646 30.6142V61.167L53.332 68.8009V76.4452L73.3342 64.9784L80.0005 68.8009V22.9337L66.646 15.2766ZM23.9025 48.3717C27.4925 48.0964 30.6267 50.763 30.9052 54.328C31.1824 57.8933 28.4975 61.0052 24.9071 61.2805C21.3171 61.5554 18.1829 58.8892 17.9061 55.326C17.6289 51.7606 20.3138 48.6487 23.9025 48.3717Z" fill="#231F20"/>
+                    <path d="M48.3932 50.6698L55.5901 46.5439L62.8131 50.6849V58.9375L66.9766 61.3241L66.2814 62.5201L61.4491 59.7496L55.5901 63.1096L48.3666 58.9673V52.249L12.4237 31.6422L13.119 30.4464L48.3932 50.6698Z" fill="#231F20"/>
+                </g>
+            </svg>
+            <svg class="c-cover__logo-shape" xmlns="http://www.w3.org/2000/svg" width="175" height="300" viewBox="0 0 175 300" fill="none">
+                <path d="M0 233.333V50.0001L29.212 33.3061L87.4981 0L145.788 33.3061L175 50.0001V250L87.4981 300.001L0 250V233.333Z" fill="white"/>
+            </svg>
+        </div>
+        <picture class="c-cover__img">
+            <!--
+            <source type="image/webp" srcset="assets/images/cbcw_cover.webp">
+            <source type="image/jpeg" srcset="assets/images/cbcw_cover.jpg">
+            -->
+            <img src="assets/images/cbcw_cover.jpg" alt="">
+        </picture>
+
+        {{ content | safe }}
+    </div>
+
+    
+    
+    
+
+    <h2 class="c-h1 u-text-center u-mb-24" id="works">Works</h2>
+    {% include "components/postlist.html" %}
+
+    <div class="u-text-center u-mt-64">
+        <h2 class="c-h1 u-mb-24" id="contact">Contact</h2>
+        <a class="c-button c-button--primary" href="mailto:">todo@gmail.com</a>
+    </div>
+
+
+    
+
+{% endblock %}
+

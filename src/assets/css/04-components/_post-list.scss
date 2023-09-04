@@ -1,0 +1,13 @@
+/*-----------------------------------------------------------------------------------------------------
+  [component:post-list]
+-------------------------------------------------------------------------------------------------------*/
+.c-post-list {
+    padding: 0 2rem;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+    gap: 4rem;
+}
+
+.c-post-list__item {
+    margin-bottom: 4rem;
+}

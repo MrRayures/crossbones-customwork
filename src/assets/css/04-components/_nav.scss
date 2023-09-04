@@ -1,0 +1,33 @@
+/*-----------------------------------------------------------------------------------------------------
+  [component:nav]
+-------------------------------------------------------------------------------------------------------*/
+.c-nav {
+    color: white;
+}
+
+.c-nav__list {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem 5rem;
+    min-height: 6rem;
+    padding: 2rem;
+    @include mq(max, bp(xs)) {
+        flex-wrap: wrap;
+        gap: 2rem;
+    }
+}
+
+.c-nav__link {
+    --accessible_outline: var(--primary);
+
+    color: #FFF;
+    display: block;
+    text-decoration: none;
+    font-size: 1.6rem;
+    &:hover,
+    &:focus {
+        color: var(--primary);
+        text-decoration: underline;
+    }
+}

@@ -1,0 +1,23 @@
+/*
+* Variables concernant les fonts
+* > utilisation : font($key)
+*/
+
+$arial     : Arial, sans-serif;
+$verdana   : Verdana, Geneva, sans-serif;
+$inconsolata: 'Inconsolata',Arial, sans-serif;;
+
+// font-family
+$font-families: (
+  "primary"   : $verdana,
+  "secondary" : $inconsolata
+);
+
+@function font($key) {
+  @if map-has-key($font-families, $key) {
+    @return map-get($font-families, $key);
+  }
+  @warn "Unknown `#{$key}` in $font-families.";
+  @return null;
+}
+

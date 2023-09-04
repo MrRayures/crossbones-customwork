@@ -1,0 +1,41 @@
+/*-----------------------------------------------------------------------------------------------------
+  [component:post]
+-------------------------------------------------------------------------------------------------------*/
+.c-post {
+    //max-width: 30rem;
+}
+
+.c-post__img {
+    display: block;
+    margin-bottom: 1rem;
+    background-color: #efefef;
+    img {
+        width: 100%;
+    }
+}
+
+.c-post__title {
+    font-size: 2rem;
+    text-transform: uppercase;
+    margin-bottom: 1rem;
+}
+
+.c-post__text {
+
+}
+
+.c-post__link {
+
+}
+
+
+/*
+* Detail
+*/
+.c-post--detail {
+    padding: 4rem 0 0 0;
+    .c-post__title {
+        font-size: 4rem;
+        margin-bottom: 2rem;
+    }
+}
