@@ -1,4 +1,7 @@
 module.exports = function (eleventyConfig) {
+
+  eleventyConfig.addPassthroughCopy('./src/admin');
+
   eleventyConfig.addPassthroughCopy("./src/assets/images/**/*.{png,jpeg,jpg,svg}");
   eleventyConfig.addPassthroughCopy("./src/assets/fonts/");
   eleventyConfig.addPassthroughCopy("./src/assets/css/styles.css");
