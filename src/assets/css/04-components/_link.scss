@@ -1,13 +1,14 @@
 /*-----------------------------------------------------------------------------------------------------
-  [component:title]
+  [component:content]
 -------------------------------------------------------------------------------------------------------*/
-.c-h1 {
-    font-size: 3.6rem;
-    text-transform: uppercase;
+
+.c-link {
+    display: inline-block;
+    
+    &:hover,
+    &:focus {
+        //text-decoration: none;
+        color: black;
+        background-color: var(--primary);
+    }
 }
-.c-h2 {
-    font-size: 2.8rem;
-    text-transform: uppercase;
-}
-.c-h3 {}
-.c-h4 {}

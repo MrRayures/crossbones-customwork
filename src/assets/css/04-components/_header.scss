@@ -11,6 +11,10 @@
     align-items: center;
     background-color: var(--secondary);
     padding: 0 4rem;
+    @include mq(max, bp(sm)) {
+        flex-direction: column;
+        padding: 0 2rem;
+    }
 }
 
 .c-header__content {}

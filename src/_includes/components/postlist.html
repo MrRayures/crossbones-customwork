@@ -4,18 +4,14 @@
         <li class="c-post-list__item">
 
             <div class="c-post">
-                <picture class="c-post__img">
-                    <!--<source type="image/webp" srcset="flower.webp">
-                    <source type="image/jpeg" srcset="flower.jpg">-->
-                    <img src="assets/images/{{ post.data.thumb }}.jpg" alt="" width="300">
-                </picture>
+
+                {% image "src/assets/images/"+post.data.thumb, "c-post__img", "Texte alternatif" %}
+  
                 <h2 class="c-post__title">{{ post.data.title }}</h2>
                 <div class="c-post__text u-mb-16">
                     <p>{{ post.data.excerpt }}</p>
                 </div>
-                <!--
                 <a class="c-post__link c-button c-button--secondary" href="{{ post.url }}" title="En savoir plus : {{ post.data.title }}">En savoir plus <span class="u-sr-only">: {{ post.data.title }}</span></a>
-                -->
             </div>
 
         </li>

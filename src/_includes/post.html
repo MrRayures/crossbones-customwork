@@ -2,17 +2,33 @@
 
 {% block content %}
     <article class="c-post c-post--detail">
+
+        <a href="/#works" class="c-link u-mb-24">< Retour</a>
+
+        <div class="c-post__header u-mb-32">
+            
+            {% image "src/assets/images/"+cover, "c-post__img", "" %}
+
+            <div class="c-post__content">
+                <h1 class="c-post__title">{{title}}</h1>
+                <div class="c-post__excerpt">
+                    <p>{{ excerpt }}</p>
+                </div>
+            </div>
+        </div>
         
-        <h1 class="c-post__title">{{title}}</h1>
-        <picture class="c-post__img">
-            <!--<source type="image/webp" srcset="flower.webp">
-            <source type="image/jpeg" srcset="flower.jpg">-->
-            <img src="/assets/images/{{ thumb }}.jpg" alt="" width="300">
-        </picture>
-        <div class="c-post__text u-mb-16">
-            <p>{{ excerpt }}</p>
+        <div class="c-post__text u-mb-64">
+            {{ content | safe }}
         </div>
 
-        {{ content | safe }}
+        <h2 class="c-h2 u-mb-24">Galerie : {{title}}</h2>
+        <ul class="c-post__gallery">
+            {% for item in gallery %}
+                <li>
+                    {% image "src/assets/images/"+item.img, "c-post__img", item.alt %}
+                </li>
+            {% endfor %}
+        </ul>
+
     </article>
 {% endblock %}
